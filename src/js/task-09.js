@@ -1,7 +1,6 @@
 const btnColor = document.querySelector(".change-color");
 const bgColorName = document.querySelector(".color");
-console.dir(btnColor);
-console.dir(bgColorName);
+
 btnColor.addEventListener('click', changeBg)
 function changeBg(e) {
   document.body.style.backgroundColor = getRandomHexColor();

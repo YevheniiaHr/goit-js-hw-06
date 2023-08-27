@@ -1,7 +1,7 @@
 const inputName = document.querySelector('#name-input');
-console.dir(inputName);
+
 const outputName = document.querySelector('#name-output');
-console.log(outputName)
+
 inputName.addEventListener("input", inputOn);
 
 function inputOn(evt) {

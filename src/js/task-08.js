@@ -13,5 +13,5 @@ function onSubmit (e) {
         password: password.value,
     };
     console.log(data);
-    formEl.reset();
+    e.currentTarget.reset();
 };
