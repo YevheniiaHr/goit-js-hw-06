@@ -5,7 +5,8 @@ function onSubmit (e) {
     e.preventDefault();
     const { email, password } = e.currentTarget.elements;
     if (email.value === "" && password.value === "") {
-    alert('The fields are empty!')
+    alert('The fields are empty!');
+    return;
     };
     
     const data = {
