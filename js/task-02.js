@@ -9,8 +9,6 @@ const ingredients = [
 const list = document.querySelector("#ingredients");
 
 
-for (const ingredient of ingredients) {
-  const li = `<li class="item"> ${ingredient} </li>`
-  list.insertAdjacentHTML("afterbegin", li).join('');
-}
+const markup = ingredients.map (ingredient => `<li class="item"> ${ingredient} </li>`).join('');
+list.insertAdjacentHTML("afterbegin", markup)
 console.log(list)
